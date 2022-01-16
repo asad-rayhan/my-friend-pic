@@ -1,0 +1,41 @@
+.photo_album{
+    width:200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.photo img{
+    width:100%;
+    overflow: hidden;
+}
+.photo_details {
+	position: absolute;
+    color:#fff;
+	left: 0px;
+	top:0;
+    display: none;
+}
+.photo_album:hover .photo_details{
+    background: rgba(107, 77, 77, 0.321);
+    display: block;
+    
+}
+.photo_album:hover .photo img{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transition:transform 2s;
+    -webkit-transition:transform 2s;
+    -moz-transition:transform 2s;
+    -ms-transition:transform 2s;
+    -o-transition:transform 2s;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
